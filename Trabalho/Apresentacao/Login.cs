@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabalho.Apresentacao;
+using Trabalho.Modelo;
 
 namespace Trabalho
 {
@@ -30,6 +31,31 @@ namespace Trabalho
         }
 
         private void btEntrar_Click(object sender, EventArgs e)
+        {
+            Controle controle = new Controle();
+            controle.acessar(tbLogin.Text, tbSenha.Text);
+
+            if (controle.encontrado)
+            {
+                MessageBox.Show("Logado com Sucesso", "Logando",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Verifique login e senha", "Erro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            BemVindo bem = new BemVindo();
+            bem.Show();
+        }
+
+        private void tbLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbSenha_TextChanged(object sender, EventArgs e)
         {
 
         }

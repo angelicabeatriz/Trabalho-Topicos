@@ -74,6 +74,7 @@
             this.tbLogin.Name = "tbLogin";
             this.tbLogin.Size = new System.Drawing.Size(100, 20);
             this.tbLogin.TabIndex = 3;
+            this.tbLogin.TextChanged += new System.EventHandler(this.tbLogin_TextChanged);
             // 
             // tbSenha
             // 
@@ -82,6 +83,7 @@
             this.tbSenha.PasswordChar = '*';
             this.tbSenha.Size = new System.Drawing.Size(100, 20);
             this.tbSenha.TabIndex = 4;
+            this.tbSenha.TextChanged += new System.EventHandler(this.tbSenha_TextChanged);
             // 
             // btCadastro
             // 
