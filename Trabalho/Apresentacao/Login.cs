@@ -34,22 +34,29 @@ namespace Trabalho
         {
             Controle controle = new Controle();
             controle.acessar(tbLogin.Text, tbSenha.Text);
-
-            if (controle.encontrado)
+            if (controle.mensagem.Equals(" "))
             {
-                MessageBox.Show("Logado com Sucesso", "Logando",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                if (controle.encontrado)
+                {
+                    MessageBox.Show("Logado com Sucesso", "Logando",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    BemVindo bem = new BemVindo();
+                    bem.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Verifique login e senha", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Verifique login e senha", "Erro",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(controle.mensagem);
             }
 
-            BemVindo bem = new BemVindo();
-            bem.Show();
         }
-
+    
         private void tbLogin_TextChanged(object sender, EventArgs e)
         {
 
