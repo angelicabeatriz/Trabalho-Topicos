@@ -16,5 +16,11 @@ namespace Trabalho.Apresentacao
         {
             InitializeComponent();
         }
+
+        private void btProximo_Click(object sender, EventArgs e)
+        {
+            Endereco end = new Endereco();
+            end.Show();
+        }
     }
 }

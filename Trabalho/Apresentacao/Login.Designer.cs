@@ -34,11 +34,14 @@
             this.lbSenha = new System.Windows.Forms.Label();
             this.tbLogin = new System.Windows.Forms.TextBox();
             this.tbSenha = new System.Windows.Forms.TextBox();
-            this.btCadastro = new System.Windows.Forms.Button();
+            this.btCadastrar = new System.Windows.Forms.Button();
             this.btSair = new System.Windows.Forms.Button();
             this.btEntrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbFacaLogin = new System.Windows.Forms.Label();
+            this.lbGestaoLivros = new System.Windows.Forms.Label();
+            this.lbCPFCNPJ = new System.Windows.Forms.Label();
+            this.btAjuda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +49,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(21, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(352, 69);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(102, 75);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -90,25 +93,25 @@
             this.tbSenha.TabIndex = 4;
             this.tbSenha.TextChanged += new System.EventHandler(this.tbSenha_TextChanged);
             // 
-            // btCadastro
+            // btCadastrar
             // 
-            this.btCadastro.BackColor = System.Drawing.Color.White;
-            this.btCadastro.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCadastro.Location = new System.Drawing.Point(102, 275);
-            this.btCadastro.Name = "btCadastro";
-            this.btCadastro.Size = new System.Drawing.Size(75, 23);
-            this.btCadastro.TabIndex = 5;
-            this.btCadastro.Text = "Cadastro";
-            this.btCadastro.UseVisualStyleBackColor = false;
-            this.btCadastro.Click += new System.EventHandler(this.btCadastro_Click);
+            this.btCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btCadastrar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCadastrar.Location = new System.Drawing.Point(148, 237);
+            this.btCadastrar.Name = "btCadastrar";
+            this.btCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.btCadastrar.TabIndex = 5;
+            this.btCadastrar.Text = "Cadastrar";
+            this.btCadastrar.UseVisualStyleBackColor = false;
+            this.btCadastrar.Click += new System.EventHandler(this.btCadastro_Click);
             // 
             // btSair
             // 
-            this.btSair.BackColor = System.Drawing.Color.White;
+            this.btSair.BackColor = System.Drawing.Color.Transparent;
             this.btSair.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSair.Location = new System.Drawing.Point(183, 275);
+            this.btSair.Location = new System.Drawing.Point(450, 3);
             this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(75, 23);
+            this.btSair.Size = new System.Drawing.Size(41, 23);
             this.btSair.TabIndex = 6;
             this.btSair.Text = "Sair";
             this.btSair.UseVisualStyleBackColor = false;
@@ -116,9 +119,9 @@
             // 
             // btEntrar
             // 
-            this.btEntrar.BackColor = System.Drawing.Color.White;
+            this.btEntrar.BackColor = System.Drawing.Color.Transparent;
             this.btEntrar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEntrar.Location = new System.Drawing.Point(21, 275);
+            this.btEntrar.Location = new System.Drawing.Point(67, 237);
             this.btEntrar.Name = "btEntrar";
             this.btEntrar.Size = new System.Drawing.Size(75, 23);
             this.btEntrar.TabIndex = 7;
@@ -128,40 +131,75 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.btAjuda);
+            this.panel1.Controls.Add(this.lbCPFCNPJ);
+            this.panel1.Controls.Add(this.lbGestaoLivros);
             this.panel1.Controls.Add(this.lbFacaLogin);
             this.panel1.Controls.Add(this.btSair);
             this.panel1.Controls.Add(this.btEntrar);
-            this.panel1.Controls.Add(this.btCadastro);
+            this.panel1.Controls.Add(this.btCadastrar);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.tbLogin);
             this.panel1.Controls.Add(this.lbLogin);
             this.panel1.Controls.Add(this.lbSenha);
             this.panel1.Controls.Add(this.tbSenha);
-            this.panel1.Location = new System.Drawing.Point(29, 25);
+            this.panel1.Location = new System.Drawing.Point(455, 181);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(371, 329);
+            this.panel1.Size = new System.Drawing.Size(494, 315);
             this.panel1.TabIndex = 8;
             // 
             // lbFacaLogin
             // 
             this.lbFacaLogin.AutoSize = true;
-            this.lbFacaLogin.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFacaLogin.Location = new System.Drawing.Point(130, 16);
+            this.lbFacaLogin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFacaLogin.Location = new System.Drawing.Point(99, 97);
             this.lbFacaLogin.Name = "lbFacaLogin";
-            this.lbFacaLogin.Size = new System.Drawing.Size(172, 27);
+            this.lbFacaLogin.Size = new System.Drawing.Size(108, 17);
             this.lbFacaLogin.TabIndex = 1;
             this.lbFacaLogin.Text = "Faça seu Login";
+            // 
+            // lbGestaoLivros
+            // 
+            this.lbGestaoLivros.AutoSize = true;
+            this.lbGestaoLivros.Font = new System.Drawing.Font("Arial Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGestaoLivros.Location = new System.Drawing.Point(114, 16);
+            this.lbGestaoLivros.Name = "lbGestaoLivros";
+            this.lbGestaoLivros.Size = new System.Drawing.Size(285, 41);
+            this.lbGestaoLivros.TabIndex = 8;
+            this.lbGestaoLivros.Text = "Gestão de Livros";
+            // 
+            // lbCPFCNPJ
+            // 
+            this.lbCPFCNPJ.AutoSize = true;
+            this.lbCPFCNPJ.BackColor = System.Drawing.Color.White;
+            this.lbCPFCNPJ.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCPFCNPJ.Location = new System.Drawing.Point(29, 159);
+            this.lbCPFCNPJ.Name = "lbCPFCNPJ";
+            this.lbCPFCNPJ.Size = new System.Drawing.Size(54, 14);
+            this.lbCPFCNPJ.TabIndex = 9;
+            this.lbCPFCNPJ.Text = "CPF/CNPJ";
+            // 
+            // btAjuda
+            // 
+            this.btAjuda.BackColor = System.Drawing.Color.Transparent;
+            this.btAjuda.Location = new System.Drawing.Point(439, 289);
+            this.btAjuda.Name = "btAjuda";
+            this.btAjuda.Size = new System.Drawing.Size(52, 23);
+            this.btAjuda.TabIndex = 10;
+            this.btAjuda.Text = "Ajuda";
+            this.btAjuda.UseVisualStyleBackColor = false;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(489, 477);
+            this.ClientSize = new System.Drawing.Size(1302, 763);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "S";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -176,11 +214,14 @@
         private System.Windows.Forms.Label lbSenha;
         private System.Windows.Forms.TextBox tbLogin;
         private System.Windows.Forms.TextBox tbSenha;
-        private System.Windows.Forms.Button btCadastro;
+        private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.Button btSair;
         private System.Windows.Forms.Button btEntrar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbFacaLogin;
+        private System.Windows.Forms.Label lbCPFCNPJ;
+        private System.Windows.Forms.Label lbGestaoLivros;
+        private System.Windows.Forms.Button btAjuda;
     }
 }
 
