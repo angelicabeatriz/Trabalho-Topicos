@@ -42,6 +42,7 @@
             this.lbCPFCNPJ = new System.Windows.Forms.Label();
             this.lbGestaoLivros = new System.Windows.Forms.Label();
             this.lbFacaLogin = new System.Windows.Forms.Label();
+            this.btSobre = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -132,6 +133,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.btSobre);
             this.panel1.Controls.Add(this.btAjuda);
             this.panel1.Controls.Add(this.lbCPFCNPJ);
             this.panel1.Controls.Add(this.lbGestaoLivros);
@@ -193,6 +195,15 @@
             this.lbFacaLogin.Text = "Faça seu Login";
             this.lbFacaLogin.Click += new System.EventHandler(this.lbFacaLogin_Click);
             // 
+            // btSobre
+            // 
+            this.btSobre.Location = new System.Drawing.Point(380, 289);
+            this.btSobre.Name = "btSobre";
+            this.btSobre.Size = new System.Drawing.Size(53, 23);
+            this.btSobre.TabIndex = 11;
+            this.btSobre.Text = "Sobre ";
+            this.btSobre.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,6 +236,7 @@
         private System.Windows.Forms.Label lbCPFCNPJ;
         private System.Windows.Forms.Label lbGestaoLivros;
         private System.Windows.Forms.Button btAjuda;
+        private System.Windows.Forms.Button btSobre;
     }
 }
 
