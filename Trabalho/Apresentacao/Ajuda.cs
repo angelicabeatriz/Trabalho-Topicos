@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Trabalho.Apresentacao
 {
-    public partial class TermoUso : Form
+    public partial class Ajuda : Form
     {
-        public TermoUso()
+        public Ajuda()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
