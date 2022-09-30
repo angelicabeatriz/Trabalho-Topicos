@@ -69,6 +69,12 @@
     <Compile Include="Apresentacao\CadastroLivros.Designer.cs">
       <DependentUpon>CadastroLivros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apresentacao\Emprestimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\Emprestimo.Designer.cs">
+      <DependentUpon>Emprestimo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apresentacao\Endereco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\CadastroLivros.resx">
       <DependentUpon>CadastroLivros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\Emprestimo.resx">
+      <DependentUpon>Emprestimo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\Endereco.resx">
       <DependentUpon>Endereco.cs</DependentUpon>
