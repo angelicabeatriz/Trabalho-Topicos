@@ -50,7 +50,7 @@
             // 
             // tbSalvar
             // 
-            this.tbSalvar.Location = new System.Drawing.Point(196, 443);
+            this.tbSalvar.Location = new System.Drawing.Point(196, 396);
             this.tbSalvar.Name = "tbSalvar";
             this.tbSalvar.Size = new System.Drawing.Size(75, 23);
             this.tbSalvar.TabIndex = 30;
@@ -60,7 +60,7 @@
             // 
             // tbNumero
             // 
-            this.tbNumero.Location = new System.Drawing.Point(35, 232);
+            this.tbNumero.Location = new System.Drawing.Point(35, 200);
             this.tbNumero.Name = "tbNumero";
             this.tbNumero.Size = new System.Drawing.Size(236, 20);
             this.tbNumero.TabIndex = 29;
@@ -69,7 +69,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(32, 213);
+            this.label6.Location = new System.Drawing.Point(32, 181);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 16);
             this.label6.TabIndex = 28;
@@ -77,7 +77,7 @@
             // 
             // tbUf
             // 
-            this.tbUf.Location = new System.Drawing.Point(35, 417);
+            this.tbUf.Location = new System.Drawing.Point(35, 370);
             this.tbUf.Name = "tbUf";
             this.tbUf.Size = new System.Drawing.Size(236, 20);
             this.tbUf.TabIndex = 27;
@@ -86,7 +86,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(34, 398);
+            this.label5.Location = new System.Drawing.Point(34, 351);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 16);
             this.label5.TabIndex = 26;
@@ -94,7 +94,7 @@
             // 
             // tbCidade
             // 
-            this.tbCidade.Location = new System.Drawing.Point(35, 357);
+            this.tbCidade.Location = new System.Drawing.Point(35, 314);
             this.tbCidade.Name = "tbCidade";
             this.tbCidade.Size = new System.Drawing.Size(236, 20);
             this.tbCidade.TabIndex = 25;
@@ -103,7 +103,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(34, 338);
+            this.label4.Location = new System.Drawing.Point(34, 295);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 16);
             this.label4.TabIndex = 24;
@@ -111,7 +111,7 @@
             // 
             // tbComplemento
             // 
-            this.tbComplemento.Location = new System.Drawing.Point(35, 290);
+            this.tbComplemento.Location = new System.Drawing.Point(35, 257);
             this.tbComplemento.Name = "tbComplemento";
             this.tbComplemento.Size = new System.Drawing.Size(236, 20);
             this.tbComplemento.TabIndex = 23;
@@ -120,7 +120,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 271);
+            this.label3.Location = new System.Drawing.Point(32, 238);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 16);
             this.label3.TabIndex = 22;
@@ -128,7 +128,7 @@
             // 
             // tbQuadra
             // 
-            this.tbQuadra.Location = new System.Drawing.Point(35, 174);
+            this.tbQuadra.Location = new System.Drawing.Point(35, 145);
             this.tbQuadra.Name = "tbQuadra";
             this.tbQuadra.Size = new System.Drawing.Size(236, 20);
             this.tbQuadra.TabIndex = 21;
@@ -137,7 +137,7 @@
             // 
             this.lbQuadra.AutoSize = true;
             this.lbQuadra.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQuadra.Location = new System.Drawing.Point(32, 155);
+            this.lbQuadra.Location = new System.Drawing.Point(32, 126);
             this.lbQuadra.Name = "lbQuadra";
             this.lbQuadra.Size = new System.Drawing.Size(49, 16);
             this.lbQuadra.TabIndex = 20;
@@ -145,7 +145,7 @@
             // 
             // btBuscar
             // 
-            this.btBuscar.Location = new System.Drawing.Point(226, 116);
+            this.btBuscar.Location = new System.Drawing.Point(226, 87);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(75, 23);
             this.btBuscar.TabIndex = 19;
@@ -155,7 +155,7 @@
             // 
             // tbCep
             // 
-            this.tbCep.Location = new System.Drawing.Point(35, 118);
+            this.tbCep.Location = new System.Drawing.Point(35, 87);
             this.tbCep.Name = "tbCep";
             this.tbCep.Size = new System.Drawing.Size(185, 20);
             this.tbCep.TabIndex = 18;
@@ -164,7 +164,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 95);
+            this.label1.Location = new System.Drawing.Point(32, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 16);
             this.label1.TabIndex = 17;
@@ -188,14 +188,14 @@
             this.panel1.Controls.Add(this.btBuscar);
             this.panel1.Controls.Add(this.tbCep);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(412, 95);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(439, 517);
+            this.panel1.Size = new System.Drawing.Size(407, 465);
             this.panel1.TabIndex = 33;
             // 
             // btAnterior
             // 
-            this.btAnterior.Location = new System.Drawing.Point(0, 485);
+            this.btAnterior.Location = new System.Drawing.Point(3, 431);
             this.btAnterior.Name = "btAnterior";
             this.btAnterior.Size = new System.Drawing.Size(53, 23);
             this.btAnterior.TabIndex = 34;
@@ -206,10 +206,10 @@
             // lbCadEnd
             // 
             this.lbCadEnd.AutoSize = true;
-            this.lbCadEnd.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCadEnd.Location = new System.Drawing.Point(60, 24);
+            this.lbCadEnd.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCadEnd.Location = new System.Drawing.Point(80, 25);
             this.lbCadEnd.Name = "lbCadEnd";
-            this.lbCadEnd.Size = new System.Drawing.Size(312, 38);
+            this.lbCadEnd.Size = new System.Drawing.Size(221, 27);
             this.lbCadEnd.TabIndex = 33;
             this.lbCadEnd.Text = "Cadastrar Endereço";
             // 
@@ -217,7 +217,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1269, 728);
+            this.ClientSize = new System.Drawing.Size(453, 494);
             this.Controls.Add(this.panel1);
             this.Name = "Endereco";
             this.Text = "Endereco";

@@ -126,16 +126,16 @@
             this.panel1.Controls.Add(this.tbSenha);
             this.panel1.Controls.Add(this.tbLogin);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(432, 187);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(396, 334);
+            this.panel1.Size = new System.Drawing.Size(345, 336);
             this.panel1.TabIndex = 16;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(79, 19);
+            this.label4.Location = new System.Drawing.Point(33, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(268, 27);
             this.label4.TabIndex = 16;
@@ -145,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1254, 698);
+            this.ClientSize = new System.Drawing.Size(389, 378);
             this.Controls.Add(this.panel1);
             this.Name = "CadastrarAdm";
             this.Text = "CadastrarAdm";

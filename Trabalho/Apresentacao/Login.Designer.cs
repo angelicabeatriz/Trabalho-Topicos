@@ -144,7 +144,7 @@
             this.panel1.Controls.Add(this.lbLogin);
             this.panel1.Controls.Add(this.lbSenha);
             this.panel1.Controls.Add(this.tbSenha);
-            this.panel1.Location = new System.Drawing.Point(455, 181);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(494, 315);
             this.panel1.TabIndex = 8;
@@ -198,7 +198,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1302, 763);
+            this.ClientSize = new System.Drawing.Size(564, 384);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";

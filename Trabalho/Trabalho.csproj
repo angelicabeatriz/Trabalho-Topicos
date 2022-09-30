@@ -63,6 +63,12 @@
     <Compile Include="Apresentacao\CadastrarAdm.Designer.cs">
       <DependentUpon>CadastrarAdm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apresentacao\CadastroLivros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\CadastroLivros.Designer.cs">
+      <DependentUpon>CadastroLivros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apresentacao\Endereco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\CadastrarAdm.resx">
       <DependentUpon>CadastrarAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\CadastroLivros.resx">
+      <DependentUpon>CadastroLivros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\Endereco.resx">
       <DependentUpon>Endereco.cs</DependentUpon>
