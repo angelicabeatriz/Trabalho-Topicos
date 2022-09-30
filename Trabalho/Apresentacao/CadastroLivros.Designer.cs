@@ -45,11 +45,16 @@
             this.btSair = new System.Windows.Forms.Button();
             this.tbTitLiv = new System.Windows.Forms.TextBox();
             this.lbTitLiv = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btAnterior);
             this.panel1.Controls.Add(this.lbCadLiv);
             this.panel1.Controls.Add(this.tbSalvar);
@@ -66,9 +71,9 @@
             this.panel1.Controls.Add(this.btSair);
             this.panel1.Controls.Add(this.tbTitLiv);
             this.panel1.Controls.Add(this.lbTitLiv);
-            this.panel1.Location = new System.Drawing.Point(22, 21);
+            this.panel1.Location = new System.Drawing.Point(477, 82);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(376, 468);
+            this.panel1.Size = new System.Drawing.Size(526, 468);
             this.panel1.TabIndex = 0;
             // 
             // btAnterior
@@ -210,16 +215,35 @@
             this.lbTitLiv.TabIndex = 35;
             this.lbTitLiv.Text = "Titulo do Livro";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(354, 72);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 154);
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(370, 229);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 14);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Coloque a Foto do Livro";
+            // 
             // CadastroLivros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 546);
+            this.ClientSize = new System.Drawing.Size(1280, 679);
             this.Controls.Add(this.panel1);
             this.Name = "CadastroLivros";
             this.Text = "CadastroLivros";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -243,5 +267,7 @@
         private System.Windows.Forms.Button btSair;
         private System.Windows.Forms.TextBox tbTitLiv;
         private System.Windows.Forms.Label lbTitLiv;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
