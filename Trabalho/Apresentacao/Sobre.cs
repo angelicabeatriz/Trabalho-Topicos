@@ -16,5 +16,17 @@ namespace Trabalho.Apresentacao
         {
             InitializeComponent();
         }
+
+        private void btSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btAnterior_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+        }
+    
     }
 }

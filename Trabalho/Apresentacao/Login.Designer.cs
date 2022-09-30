@@ -160,6 +160,7 @@
             this.btAjuda.TabIndex = 10;
             this.btAjuda.Text = "Ajuda";
             this.btAjuda.UseVisualStyleBackColor = false;
+            this.btAjuda.Click += new System.EventHandler(this.btAjuda_Click);
             // 
             // lbCPFCNPJ
             // 
@@ -203,6 +204,7 @@
             this.btSobre.TabIndex = 11;
             this.btSobre.Text = "Sobre ";
             this.btSobre.UseVisualStyleBackColor = true;
+            this.btSobre.Click += new System.EventHandler(this.btSobre_Click);
             // 
             // Login
             // 

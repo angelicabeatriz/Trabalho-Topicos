@@ -56,7 +56,17 @@ namespace Trabalho
             }
 
         }
-    
+        private void btAjuda_Click(object sender, EventArgs e)
+        {
+            Ajuda ajuda = new Ajuda();
+            ajuda.Show();
+        }
+        private void btSobre_Click(object sender, EventArgs e)
+        {
+            Sobre sobre = new Sobre();
+            sobre.Show();
+        }
+
         private void tbLogin_TextChanged(object sender, EventArgs e)
         {
 
