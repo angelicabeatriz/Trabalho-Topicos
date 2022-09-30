@@ -31,16 +31,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btCad = new System.Windows.Forms.Button();
+            this.tbLogin = new System.Windows.Forms.TextBox();
+            this.tbSenha = new System.Windows.Forms.TextBox();
+            this.tbConfirmarSenha = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btSair = new System.Windows.Forms.Button();
+            this.lbTermoUso = new System.Windows.Forms.LinkLabel();
+            this.cbTermoUso = new System.Windows.Forms.CheckBox();
             this.btProximo = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbTermoUso = new System.Windows.Forms.CheckBox();
-            this.lbTermoUso = new System.Windows.Forms.LinkLabel();
-            this.btSair = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,39 +74,40 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Confirmar Senha";
             // 
-            // button1
+            // btCad
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(113, 249);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btCad.BackColor = System.Drawing.Color.White;
+            this.btCad.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCad.Location = new System.Drawing.Point(113, 249);
+            this.btCad.Name = "btCad";
+            this.btCad.Size = new System.Drawing.Size(75, 23);
+            this.btCad.TabIndex = 3;
+            this.btCad.Text = "Cadastrar";
+            this.btCad.UseVisualStyleBackColor = false;
+            this.btCad.Click += new System.EventHandler(this.btCad_Click);
             // 
-            // textBox1
+            // tbLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(32, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 20);
-            this.textBox1.TabIndex = 4;
+            this.tbLogin.Location = new System.Drawing.Point(32, 97);
+            this.tbLogin.Name = "tbLogin";
+            this.tbLogin.Size = new System.Drawing.Size(226, 20);
+            this.tbLogin.TabIndex = 4;
             // 
-            // textBox2
+            // tbSenha
             // 
-            this.textBox2.Location = new System.Drawing.Point(32, 154);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(226, 20);
-            this.textBox2.TabIndex = 5;
+            this.tbSenha.Location = new System.Drawing.Point(32, 154);
+            this.tbSenha.Name = "tbSenha";
+            this.tbSenha.PasswordChar = '*';
+            this.tbSenha.Size = new System.Drawing.Size(226, 20);
+            this.tbSenha.TabIndex = 5;
             // 
-            // textBox3
+            // tbConfirmarSenha
             // 
-            this.textBox3.Location = new System.Drawing.Point(32, 211);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(226, 20);
-            this.textBox3.TabIndex = 6;
+            this.tbConfirmarSenha.Location = new System.Drawing.Point(32, 211);
+            this.tbConfirmarSenha.Name = "tbConfirmarSenha";
+            this.tbConfirmarSenha.PasswordChar = '*';
+            this.tbConfirmarSenha.Size = new System.Drawing.Size(226, 20);
+            this.tbConfirmarSenha.TabIndex = 6;
             // 
             // panel1
             // 
@@ -115,18 +116,51 @@
             this.panel1.Controls.Add(this.cbTermoUso);
             this.panel1.Controls.Add(this.btProximo);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.btCad);
+            this.panel1.Controls.Add(this.tbConfirmarSenha);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbSenha);
+            this.panel1.Controls.Add(this.tbLogin);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(449, 152);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(335, 348);
             this.panel1.TabIndex = 7;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btSair
+            // 
+            this.btSair.BackColor = System.Drawing.Color.Transparent;
+            this.btSair.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSair.Location = new System.Drawing.Point(284, 3);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(41, 23);
+            this.btSair.TabIndex = 10;
+            this.btSair.Text = "Sair";
+            this.btSair.UseVisualStyleBackColor = false;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
+            // 
+            // lbTermoUso
+            // 
+            this.lbTermoUso.AutoSize = true;
+            this.lbTermoUso.Location = new System.Drawing.Point(3, 302);
+            this.lbTermoUso.Name = "lbTermoUso";
+            this.lbTermoUso.Size = new System.Drawing.Size(116, 13);
+            this.lbTermoUso.TabIndex = 9;
+            this.lbTermoUso.TabStop = true;
+            this.lbTermoUso.Text = "Leia os Termos de Uso";
+            this.lbTermoUso.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbTermoUso_LinkClicked);
+            // 
+            // cbTermoUso
+            // 
+            this.cbTermoUso.AutoSize = true;
+            this.cbTermoUso.Location = new System.Drawing.Point(6, 282);
+            this.cbTermoUso.Name = "cbTermoUso";
+            this.cbTermoUso.Size = new System.Drawing.Size(93, 17);
+            this.cbTermoUso.TabIndex = 8;
+            this.cbTermoUso.Text = "Termo de Uso";
+            this.cbTermoUso.UseVisualStyleBackColor = true;
             // 
             // btProximo
             // 
@@ -145,40 +179,9 @@
             this.label4.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(27, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 27);
+            this.label4.Size = new System.Drawing.Size(202, 27);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Cadastrar ";
-            // 
-            // cbTermoUso
-            // 
-            this.cbTermoUso.AutoSize = true;
-            this.cbTermoUso.Location = new System.Drawing.Point(6, 282);
-            this.cbTermoUso.Name = "cbTermoUso";
-            this.cbTermoUso.Size = new System.Drawing.Size(93, 17);
-            this.cbTermoUso.TabIndex = 8;
-            this.cbTermoUso.Text = "Termo de Uso";
-            this.cbTermoUso.UseVisualStyleBackColor = true;
-            // 
-            // lbTermoUso
-            // 
-            this.lbTermoUso.AutoSize = true;
-            this.lbTermoUso.Location = new System.Drawing.Point(3, 302);
-            this.lbTermoUso.Name = "lbTermoUso";
-            this.lbTermoUso.Size = new System.Drawing.Size(116, 13);
-            this.lbTermoUso.TabIndex = 9;
-            this.lbTermoUso.TabStop = true;
-            this.lbTermoUso.Text = "Leia os Termos de Uso";
-            // 
-            // btSair
-            // 
-            this.btSair.BackColor = System.Drawing.Color.Transparent;
-            this.btSair.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSair.Location = new System.Drawing.Point(284, 3);
-            this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(41, 23);
-            this.btSair.TabIndex = 10;
-            this.btSair.Text = "Sair";
-            this.btSair.UseVisualStyleBackColor = false;
+            this.label4.Text = "Cadastrar Usuario";
             // 
             // Cadastro
             // 
@@ -200,10 +203,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btCad;
+        private System.Windows.Forms.TextBox tbLogin;
+        private System.Windows.Forms.TextBox tbSenha;
+        private System.Windows.Forms.TextBox tbConfirmarSenha;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btProximo;

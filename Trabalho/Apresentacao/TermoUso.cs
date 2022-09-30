@@ -17,9 +17,15 @@ namespace Trabalho.Apresentacao
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btSair_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void btAnterior_Click(object sender, EventArgs e)
+        {
+            Cadastro cad = new Cadastro();
+            cad.Show();
         }
     }
 }
