@@ -38,6 +38,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btProximo = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.cbTermoUso = new System.Windows.Forms.CheckBox();
+            this.lbTermoUso = new System.Windows.Forms.LinkLabel();
+            this.btSair = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,6 +110,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btSair);
+            this.panel1.Controls.Add(this.lbTermoUso);
+            this.panel1.Controls.Add(this.cbTermoUso);
             this.panel1.Controls.Add(this.btProximo);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.button1);
@@ -116,16 +122,16 @@
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(449, 152);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(345, 328);
+            this.panel1.Size = new System.Drawing.Size(335, 348);
             this.panel1.TabIndex = 7;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btProximo
             // 
             this.btProximo.BackColor = System.Drawing.Color.Transparent;
-            this.btProximo.Location = new System.Drawing.Point(290, 302);
+            this.btProximo.Location = new System.Drawing.Point(273, 292);
             this.btProximo.Name = "btProximo";
             this.btProximo.Size = new System.Drawing.Size(52, 23);
             this.btProximo.TabIndex = 7;
@@ -143,11 +149,42 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Cadastrar ";
             // 
+            // cbTermoUso
+            // 
+            this.cbTermoUso.AutoSize = true;
+            this.cbTermoUso.Location = new System.Drawing.Point(6, 282);
+            this.cbTermoUso.Name = "cbTermoUso";
+            this.cbTermoUso.Size = new System.Drawing.Size(93, 17);
+            this.cbTermoUso.TabIndex = 8;
+            this.cbTermoUso.Text = "Termo de Uso";
+            this.cbTermoUso.UseVisualStyleBackColor = true;
+            // 
+            // lbTermoUso
+            // 
+            this.lbTermoUso.AutoSize = true;
+            this.lbTermoUso.Location = new System.Drawing.Point(3, 302);
+            this.lbTermoUso.Name = "lbTermoUso";
+            this.lbTermoUso.Size = new System.Drawing.Size(116, 13);
+            this.lbTermoUso.TabIndex = 9;
+            this.lbTermoUso.TabStop = true;
+            this.lbTermoUso.Text = "Leia os Termos de Uso";
+            // 
+            // btSair
+            // 
+            this.btSair.BackColor = System.Drawing.Color.Transparent;
+            this.btSair.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSair.Location = new System.Drawing.Point(284, 3);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(41, 23);
+            this.btSair.TabIndex = 10;
+            this.btSair.Text = "Sair";
+            this.btSair.UseVisualStyleBackColor = false;
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(378, 378);
+            this.ClientSize = new System.Drawing.Size(1286, 700);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Cadastro";
@@ -170,5 +207,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btProximo;
+        private System.Windows.Forms.LinkLabel lbTermoUso;
+        private System.Windows.Forms.CheckBox cbTermoUso;
+        private System.Windows.Forms.Button btSair;
     }
 }
