@@ -71,7 +71,7 @@
             this.panel1.Controls.Add(this.btSair);
             this.panel1.Controls.Add(this.tbTitLiv);
             this.panel1.Controls.Add(this.lbTitLiv);
-            this.panel1.Location = new System.Drawing.Point(477, 82);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(526, 468);
             this.panel1.TabIndex = 0;
@@ -191,7 +191,7 @@
             // 
             // btSair
             // 
-            this.btSair.Location = new System.Drawing.Point(312, 3);
+            this.btSair.Location = new System.Drawing.Point(482, 3);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(41, 23);
             this.btSair.TabIndex = 37;
@@ -237,7 +237,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 679);
+            this.ClientSize = new System.Drawing.Size(584, 549);
             this.Controls.Add(this.panel1);
             this.Name = "CadastroLivros";
             this.Text = "CadastroLivros";
