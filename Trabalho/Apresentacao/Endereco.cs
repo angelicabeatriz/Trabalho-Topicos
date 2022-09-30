@@ -31,10 +31,10 @@ namespace Trabalho.Apresentacao
                 try
                 {
                     var resultado = ws.consultaCEP(tbCep.Text);
-                    tbEndereco.Text = resultado.end;
+                    tbQuadra.Text = resultado.end;
                     tbComplemento.Text = resultado.complemento2;
                     tbCidade.Text = resultado.cidade;
-                    tbBairro.Text = resultado.bairro;
+                 // tbBairro.Text = resultado.bairro;
                     tbUf.Text = resultado.uf;
 
                 }
@@ -48,15 +48,16 @@ namespace Trabalho.Apresentacao
 
         private void tbSalvar_Click(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Data Source=CRP-DESEN-TO42\\SQLEXPRESS;Initial Catalog=Aulas;Integrated Security=True");
-            SqlCommand command = new SqlCommand("insert into Endereco(cep, endereco, numero, complemento,  cidade, bairro, estado) " +
-                "values(@cep, @endereco, @numero, @complemento,  @cidade, @bairro, @estado)", sql);
+            SqlConnection sql = new SqlConnection("Data Source=LAPTOP-R7T019C0\\MSQLBEATRIZ;Initial Catalog=Gestao Livros;Integrated Security=True");
+            SqlCommand command = new SqlCommand("insert into Endereco(id, cep, quadra, numero, complemento, cidade, estado) " +
+                "values(@id, @cep, @quadra, @numero, @complemento, @cidade, @estado)", sql);
+            command.Parameters.Add("@id", SqlDbType.Int).Value = 0;
             command.Parameters.Add("@cep", SqlDbType.VarChar).Value = tbCep.Text;
-            command.Parameters.Add("@endereco", SqlDbType.VarChar).Value = tbEndereco.Text;
+            command.Parameters.Add("@quadra", SqlDbType.VarChar).Value = tbQuadra.Text;
             command.Parameters.Add("@numero", SqlDbType.VarChar).Value = tbNumero.Text;
             command.Parameters.Add("@complemento", SqlDbType.VarChar).Value = tbComplemento.Text;
             command.Parameters.Add("@cidade", SqlDbType.VarChar).Value = tbCidade.Text;
-            command.Parameters.Add("@bairro", SqlDbType.VarChar).Value = tbBairro.Text;
+          //command.Parameters.Add("@bairro", SqlDbType.VarChar).Value = tbBairro.Text;
             command.Parameters.Add("@estado", SqlDbType.VarChar).Value = tbUf.Text;
 
             try
@@ -65,11 +66,11 @@ namespace Trabalho.Apresentacao
                 command.ExecuteNonQuery();
                 MessageBox.Show("Endereço Cadastrado com Sucesso!");
                 tbCep.Clear();
-                tbEndereco.Clear();
+                tbQuadra.Clear();
                 tbComplemento.Clear();
                 tbNumero.Clear();
                 tbUf.Clear();
-                tbBairro.Clear();
+              //tbBairro.Clear();
                 tbCidade.Clear();
             }
             catch (SqlException ex)

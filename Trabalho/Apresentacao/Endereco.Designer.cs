@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbBairro = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.tbSalvar = new System.Windows.Forms.Button();
             this.tbNumero = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -39,37 +37,20 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tbComplemento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.tbEndereco = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tbQuadra = new System.Windows.Forms.TextBox();
+            this.lbQuadra = new System.Windows.Forms.Label();
             this.btBuscar = new System.Windows.Forms.Button();
             this.tbCep = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbCadEnd = new System.Windows.Forms.Label();
             this.btAnterior = new System.Windows.Forms.Button();
+            this.lbCadEnd = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tbBairro
-            // 
-            this.tbBairro.Location = new System.Drawing.Point(34, 402);
-            this.tbBairro.Name = "tbBairro";
-            this.tbBairro.Size = new System.Drawing.Size(236, 20);
-            this.tbBairro.TabIndex = 32;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(32, 383);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 16);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Bairro";
-            // 
             // tbSalvar
             // 
-            this.tbSalvar.Location = new System.Drawing.Point(196, 496);
+            this.tbSalvar.Location = new System.Drawing.Point(196, 443);
             this.tbSalvar.Name = "tbSalvar";
             this.tbSalvar.Size = new System.Drawing.Size(75, 23);
             this.tbSalvar.TabIndex = 30;
@@ -96,7 +77,7 @@
             // 
             // tbUf
             // 
-            this.tbUf.Location = new System.Drawing.Point(35, 457);
+            this.tbUf.Location = new System.Drawing.Point(35, 417);
             this.tbUf.Name = "tbUf";
             this.tbUf.Size = new System.Drawing.Size(236, 20);
             this.tbUf.TabIndex = 27;
@@ -105,7 +86,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 438);
+            this.label5.Location = new System.Drawing.Point(34, 398);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 16);
             this.label5.TabIndex = 26;
@@ -113,7 +94,7 @@
             // 
             // tbCidade
             // 
-            this.tbCidade.Location = new System.Drawing.Point(35, 348);
+            this.tbCidade.Location = new System.Drawing.Point(35, 357);
             this.tbCidade.Name = "tbCidade";
             this.tbCidade.Size = new System.Drawing.Size(236, 20);
             this.tbCidade.TabIndex = 25;
@@ -122,7 +103,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 329);
+            this.label4.Location = new System.Drawing.Point(34, 338);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 16);
             this.label4.TabIndex = 24;
@@ -145,22 +126,22 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "Complemento";
             // 
-            // tbEndereco
+            // tbQuadra
             // 
-            this.tbEndereco.Location = new System.Drawing.Point(35, 174);
-            this.tbEndereco.Name = "tbEndereco";
-            this.tbEndereco.Size = new System.Drawing.Size(236, 20);
-            this.tbEndereco.TabIndex = 21;
+            this.tbQuadra.Location = new System.Drawing.Point(35, 174);
+            this.tbQuadra.Name = "tbQuadra";
+            this.tbQuadra.Size = new System.Drawing.Size(236, 20);
+            this.tbQuadra.TabIndex = 21;
             // 
-            // label2
+            // lbQuadra
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 155);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 16);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Endereço";
+            this.lbQuadra.AutoSize = true;
+            this.lbQuadra.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQuadra.Location = new System.Drawing.Point(32, 155);
+            this.lbQuadra.Name = "lbQuadra";
+            this.lbQuadra.Size = new System.Drawing.Size(49, 16);
+            this.lbQuadra.TabIndex = 20;
+            this.lbQuadra.Text = "Quadra";
             // 
             // btBuscar
             // 
@@ -193,8 +174,6 @@
             // 
             this.panel1.Controls.Add(this.btAnterior);
             this.panel1.Controls.Add(this.lbCadEnd);
-            this.panel1.Controls.Add(this.tbBairro);
-            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.tbSalvar);
             this.panel1.Controls.Add(this.tbNumero);
             this.panel1.Controls.Add(this.label6);
@@ -204,15 +183,25 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.tbComplemento);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.tbEndereco);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.tbQuadra);
+            this.panel1.Controls.Add(this.lbQuadra);
             this.panel1.Controls.Add(this.btBuscar);
             this.panel1.Controls.Add(this.tbCep);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(412, 95);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(439, 566);
+            this.panel1.Size = new System.Drawing.Size(439, 517);
             this.panel1.TabIndex = 33;
+            // 
+            // btAnterior
+            // 
+            this.btAnterior.Location = new System.Drawing.Point(0, 485);
+            this.btAnterior.Name = "btAnterior";
+            this.btAnterior.Size = new System.Drawing.Size(53, 23);
+            this.btAnterior.TabIndex = 34;
+            this.btAnterior.Text = "Anterior";
+            this.btAnterior.UseVisualStyleBackColor = true;
+            this.btAnterior.Click += new System.EventHandler(this.btAnterior_Click);
             // 
             // lbCadEnd
             // 
@@ -223,16 +212,6 @@
             this.lbCadEnd.Size = new System.Drawing.Size(312, 38);
             this.lbCadEnd.TabIndex = 33;
             this.lbCadEnd.Text = "Cadastrar Endereço";
-            // 
-            // btAnterior
-            // 
-            this.btAnterior.Location = new System.Drawing.Point(3, 531);
-            this.btAnterior.Name = "btAnterior";
-            this.btAnterior.Size = new System.Drawing.Size(53, 23);
-            this.btAnterior.TabIndex = 34;
-            this.btAnterior.Text = "Anterior";
-            this.btAnterior.UseVisualStyleBackColor = true;
-            this.btAnterior.Click += new System.EventHandler(this.btAnterior_Click);
             // 
             // Endereco
             // 
@@ -249,9 +228,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tbBairro;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button tbSalvar;
         private System.Windows.Forms.TextBox tbNumero;
         private System.Windows.Forms.Label label6;
@@ -261,8 +237,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbComplemento;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbEndereco;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tbQuadra;
+        private System.Windows.Forms.Label lbQuadra;
         private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.TextBox tbCep;
         private System.Windows.Forms.Label label1;

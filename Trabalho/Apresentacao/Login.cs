@@ -66,5 +66,20 @@ namespace Trabalho
         {
 
         }
+
+        private void lbGestaoLivros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbFacaLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbCPFCNPJ_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

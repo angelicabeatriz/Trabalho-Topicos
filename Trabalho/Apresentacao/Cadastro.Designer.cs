@@ -36,8 +36,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.btProximo = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,16 +120,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(345, 328);
             this.panel1.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(27, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 27);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Cadastrar ";
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btProximo
             // 
@@ -141,6 +132,16 @@
             this.btProximo.Text = "Proximo";
             this.btProximo.UseVisualStyleBackColor = false;
             this.btProximo.Click += new System.EventHandler(this.btProximo_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(27, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(121, 27);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Cadastrar ";
             // 
             // Cadastro
             // 

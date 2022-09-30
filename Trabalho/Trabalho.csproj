@@ -57,6 +57,12 @@
     <Compile Include="Apresentacao\BemVindo.Designer.cs">
       <DependentUpon>BemVindo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apresentacao\CadastrarAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\CadastrarAdm.Designer.cs">
+      <DependentUpon>CadastrarAdm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apresentacao\Endereco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Apresentacao\BemVindo.resx">
       <DependentUpon>BemVindo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\CadastrarAdm.resx">
+      <DependentUpon>CadastrarAdm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\Endereco.resx">
       <DependentUpon>Endereco.cs</DependentUpon>

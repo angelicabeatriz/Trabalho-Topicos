@@ -38,10 +38,10 @@
             this.btSair = new System.Windows.Forms.Button();
             this.btEntrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbFacaLogin = new System.Windows.Forms.Label();
-            this.lbGestaoLivros = new System.Windows.Forms.Label();
-            this.lbCPFCNPJ = new System.Windows.Forms.Label();
             this.btAjuda = new System.Windows.Forms.Button();
+            this.lbCPFCNPJ = new System.Windows.Forms.Label();
+            this.lbGestaoLivros = new System.Windows.Forms.Label();
+            this.lbFacaLogin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -149,37 +149,6 @@
             this.panel1.Size = new System.Drawing.Size(494, 315);
             this.panel1.TabIndex = 8;
             // 
-            // lbFacaLogin
-            // 
-            this.lbFacaLogin.AutoSize = true;
-            this.lbFacaLogin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFacaLogin.Location = new System.Drawing.Point(99, 97);
-            this.lbFacaLogin.Name = "lbFacaLogin";
-            this.lbFacaLogin.Size = new System.Drawing.Size(108, 17);
-            this.lbFacaLogin.TabIndex = 1;
-            this.lbFacaLogin.Text = "Faça seu Login";
-            // 
-            // lbGestaoLivros
-            // 
-            this.lbGestaoLivros.AutoSize = true;
-            this.lbGestaoLivros.Font = new System.Drawing.Font("Arial Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGestaoLivros.Location = new System.Drawing.Point(114, 16);
-            this.lbGestaoLivros.Name = "lbGestaoLivros";
-            this.lbGestaoLivros.Size = new System.Drawing.Size(285, 41);
-            this.lbGestaoLivros.TabIndex = 8;
-            this.lbGestaoLivros.Text = "Gestão de Livros";
-            // 
-            // lbCPFCNPJ
-            // 
-            this.lbCPFCNPJ.AutoSize = true;
-            this.lbCPFCNPJ.BackColor = System.Drawing.Color.White;
-            this.lbCPFCNPJ.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCPFCNPJ.Location = new System.Drawing.Point(29, 159);
-            this.lbCPFCNPJ.Name = "lbCPFCNPJ";
-            this.lbCPFCNPJ.Size = new System.Drawing.Size(54, 14);
-            this.lbCPFCNPJ.TabIndex = 9;
-            this.lbCPFCNPJ.Text = "CPF/CNPJ";
-            // 
             // btAjuda
             // 
             this.btAjuda.BackColor = System.Drawing.Color.Transparent;
@@ -189,6 +158,40 @@
             this.btAjuda.TabIndex = 10;
             this.btAjuda.Text = "Ajuda";
             this.btAjuda.UseVisualStyleBackColor = false;
+            // 
+            // lbCPFCNPJ
+            // 
+            this.lbCPFCNPJ.AutoSize = true;
+            this.lbCPFCNPJ.BackColor = System.Drawing.Color.White;
+            this.lbCPFCNPJ.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCPFCNPJ.Location = new System.Drawing.Point(195, 159);
+            this.lbCPFCNPJ.Name = "lbCPFCNPJ";
+            this.lbCPFCNPJ.Size = new System.Drawing.Size(54, 14);
+            this.lbCPFCNPJ.TabIndex = 9;
+            this.lbCPFCNPJ.Text = "CPF/CNPJ";
+            this.lbCPFCNPJ.Click += new System.EventHandler(this.lbCPFCNPJ_Click);
+            // 
+            // lbGestaoLivros
+            // 
+            this.lbGestaoLivros.AutoSize = true;
+            this.lbGestaoLivros.Font = new System.Drawing.Font("Arial Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGestaoLivros.Location = new System.Drawing.Point(95, 14);
+            this.lbGestaoLivros.Name = "lbGestaoLivros";
+            this.lbGestaoLivros.Size = new System.Drawing.Size(285, 41);
+            this.lbGestaoLivros.TabIndex = 8;
+            this.lbGestaoLivros.Text = "Gestão de Livros";
+            this.lbGestaoLivros.Click += new System.EventHandler(this.lbGestaoLivros_Click);
+            // 
+            // lbFacaLogin
+            // 
+            this.lbFacaLogin.AutoSize = true;
+            this.lbFacaLogin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFacaLogin.Location = new System.Drawing.Point(99, 114);
+            this.lbFacaLogin.Name = "lbFacaLogin";
+            this.lbFacaLogin.Size = new System.Drawing.Size(108, 17);
+            this.lbFacaLogin.TabIndex = 1;
+            this.lbFacaLogin.Text = "Faça seu Login";
+            this.lbFacaLogin.Click += new System.EventHandler(this.lbFacaLogin_Click);
             // 
             // Login
             // 

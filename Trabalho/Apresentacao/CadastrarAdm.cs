@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Trabalho.Apresentacao
 {
-    public partial class Cadastro : Form
+    public partial class CadastrarAdm : Form
     {
-        public Cadastro()
+        public CadastrarAdm()
         {
             InitializeComponent();
-        }
-
-        private void btProximo_Click(object sender, EventArgs e)
-        {
-            Endereco end = new Endereco();
-            end.Show();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
