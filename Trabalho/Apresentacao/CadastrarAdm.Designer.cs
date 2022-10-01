@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.btSair = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +51,7 @@
             this.btAnterior.TabIndex = 15;
             this.btAnterior.Text = "Proximo";
             this.btAnterior.UseVisualStyleBackColor = false;
+            this.btAnterior.Click += new System.EventHandler(this.btAnterior_Click);
             // 
             // button1
             // 
@@ -117,6 +119,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btSair);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btAnterior);
             this.panel1.Controls.Add(this.button1);
@@ -140,6 +143,18 @@
             this.label4.Size = new System.Drawing.Size(268, 27);
             this.label4.TabIndex = 16;
             this.label4.Text = "Cadastrar Administrador";
+            // 
+            // btSair
+            // 
+            this.btSair.BackColor = System.Drawing.Color.Transparent;
+            this.btSair.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSair.Location = new System.Drawing.Point(301, 3);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(41, 23);
+            this.btSair.TabIndex = 17;
+            this.btSair.Text = "Sair";
+            this.btSair.UseVisualStyleBackColor = false;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
             // CadastrarAdm
             // 
@@ -167,5 +182,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btSair;
     }
 }
