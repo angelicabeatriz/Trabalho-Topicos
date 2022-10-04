@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btAnterior = new System.Windows.Forms.Button();
             this.lbCadLiv = new System.Windows.Forms.Label();
             this.tbSalvar = new System.Windows.Forms.Button();
@@ -45,8 +47,6 @@
             this.btSair = new System.Windows.Forms.Button();
             this.tbTitLiv = new System.Windows.Forms.TextBox();
             this.lbTitLiv = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +76,24 @@
             this.panel1.Size = new System.Drawing.Size(526, 468);
             this.panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(370, 229);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 14);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Coloque a Foto do Livro";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(354, 72);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 154);
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
+            // 
             // btAnterior
             // 
             this.btAnterior.Location = new System.Drawing.Point(3, 430);
@@ -84,6 +102,7 @@
             this.btAnterior.TabIndex = 50;
             this.btAnterior.Text = "Anterior";
             this.btAnterior.UseVisualStyleBackColor = true;
+            this.btAnterior.Click += new System.EventHandler(this.btAnterior_Click);
             // 
             // lbCadLiv
             // 
@@ -101,7 +120,7 @@
             this.tbSalvar.Name = "tbSalvar";
             this.tbSalvar.Size = new System.Drawing.Size(75, 23);
             this.tbSalvar.TabIndex = 48;
-            this.tbSalvar.Text = "Salvar";
+            this.tbSalvar.Text = "Cadastrar";
             this.tbSalvar.UseVisualStyleBackColor = true;
             // 
             // tbAnoPlub
@@ -197,6 +216,7 @@
             this.btSair.TabIndex = 37;
             this.btSair.Text = "Sair";
             this.btSair.UseVisualStyleBackColor = true;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
             // tbTitLiv
             // 
@@ -214,24 +234,6 @@
             this.lbTitLiv.Size = new System.Drawing.Size(86, 16);
             this.lbTitLiv.TabIndex = 35;
             this.lbTitLiv.Text = "Titulo do Livro";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(354, 72);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 154);
-            this.pictureBox1.TabIndex = 51;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(370, 229);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 14);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "Coloque a Foto do Livro";
             // 
             // CadastroLivros
             // 

@@ -1,6 +1,6 @@
 ﻿namespace Trabalho.Apresentacao
 {
-    partial class Cadastro
+    partial class CadastroUsuario
     {
         /// <summary>
         /// Required designer variable.

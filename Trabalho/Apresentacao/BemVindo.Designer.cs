@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btSair = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btCadGesLiv = new System.Windows.Forms.Button();
             this.btCadAdm = new System.Windows.Forms.Button();
             this.btCadLiv = new System.Windows.Forms.Button();
-            this.btSair = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,10 +56,22 @@
             this.panel1.Controls.Add(this.btCadAdm);
             this.panel1.Controls.Add(this.btCadLiv);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(161, 160);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(514, 238);
             this.panel1.TabIndex = 1;
+            // 
+            // btSair
+            // 
+            this.btSair.BackColor = System.Drawing.Color.Transparent;
+            this.btSair.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSair.Location = new System.Drawing.Point(470, 3);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(41, 23);
+            this.btSair.TabIndex = 11;
+            this.btSair.Text = "Sair";
+            this.btSair.UseVisualStyleBackColor = false;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
             // label2
             // 
@@ -105,24 +117,12 @@
             this.btCadLiv.UseVisualStyleBackColor = true;
             this.btCadLiv.Click += new System.EventHandler(this.btCadLiv_Click);
             // 
-            // btSair
-            // 
-            this.btSair.BackColor = System.Drawing.Color.Transparent;
-            this.btSair.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSair.Location = new System.Drawing.Point(470, 3);
-            this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(41, 23);
-            this.btSair.TabIndex = 11;
-            this.btSair.Text = "Sair";
-            this.btSair.UseVisualStyleBackColor = false;
-            this.btSair.Click += new System.EventHandler(this.btSair_Click);
-            // 
             // BemVindo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1046, 525);
+            this.ClientSize = new System.Drawing.Size(547, 298);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "BemVindo";

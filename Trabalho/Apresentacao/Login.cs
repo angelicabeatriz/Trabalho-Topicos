@@ -21,7 +21,7 @@ namespace Trabalho
 
         private void btCadastro_Click(object sender, EventArgs e)
         {
-            Cadastro cad = new Cadastro();
+            CadastroUsuario cad = new CadastroUsuario();
             cad.Show();
         }
 

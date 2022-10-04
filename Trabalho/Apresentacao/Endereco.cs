@@ -20,7 +20,7 @@ namespace Trabalho.Apresentacao
 
         private void btAnterior_Click(object sender, EventArgs e)
         {
-            Cadastro cad = new Cadastro();
+            CadastroUsuario cad = new CadastroUsuario();
             cad.Show();
         }
 

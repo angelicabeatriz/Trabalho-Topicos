@@ -12,9 +12,9 @@ using Trabalho.Modelo;
 
 namespace Trabalho.Apresentacao
 {
-    public partial class Cadastro : Form
+    public partial class CadastroUsuario : Form
     {
-        public Cadastro()
+        public CadastroUsuario()
         {
             InitializeComponent();
         }

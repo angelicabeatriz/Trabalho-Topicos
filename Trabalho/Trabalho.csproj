@@ -99,11 +99,11 @@
     <Compile Include="Apresentacao\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apresentacao\Cadastro.cs">
+    <Compile Include="Apresentacao\CadastroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Apresentacao\Cadastro.Designer.cs">
-      <DependentUpon>Cadastro.cs</DependentUpon>
+    <Compile Include="Apresentacao\CadastroUsuario.Designer.cs">
+      <DependentUpon>CadastroUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Apresentacao\Sobre.cs">
       <SubType>Form</SubType>
@@ -151,8 +151,8 @@
     <EmbeddedResource Include="Apresentacao\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Apresentacao\Cadastro.resx">
-      <DependentUpon>Cadastro.cs</DependentUpon>
+    <EmbeddedResource Include="Apresentacao\CadastroUsuario.resx">
+      <DependentUpon>CadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apresentacao\Sobre.resx">
       <DependentUpon>Sobre.cs</DependentUpon>
