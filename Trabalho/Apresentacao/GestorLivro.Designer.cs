@@ -45,8 +45,8 @@
             this.lbGestLiv = new System.Windows.Forms.Label();
             this.btAnterior = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbSenha = new System.Windows.Forms.Label();
             this.tbSenha = new System.Windows.Forms.TextBox();
+            this.lbSenha = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,7 @@
             this.btSair.TabIndex = 55;
             this.btSair.Text = "Sair";
             this.btSair.UseVisualStyleBackColor = true;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
             // lbEmail
             // 
@@ -169,6 +170,7 @@
             this.tbSalvar.TabIndex = 66;
             this.tbSalvar.Text = "Salvar";
             this.tbSalvar.UseVisualStyleBackColor = true;
+            this.tbSalvar.Click += new System.EventHandler(this.tbSalvar_Click);
             // 
             // lbGestLiv
             // 
@@ -188,6 +190,7 @@
             this.btAnterior.TabIndex = 68;
             this.btAnterior.Text = "Anterior";
             this.btAnterior.UseVisualStyleBackColor = true;
+            this.btAnterior.Click += new System.EventHandler(this.btAnterior_Click);
             // 
             // panel1
             // 
@@ -214,6 +217,14 @@
             this.panel1.Size = new System.Drawing.Size(465, 533);
             this.panel1.TabIndex = 0;
             // 
+            // tbSenha
+            // 
+            this.tbSenha.Location = new System.Drawing.Point(31, 443);
+            this.tbSenha.Name = "tbSenha";
+            this.tbSenha.PasswordChar = '*';
+            this.tbSenha.Size = new System.Drawing.Size(236, 20);
+            this.tbSenha.TabIndex = 70;
+            // 
             // lbSenha
             // 
             this.lbSenha.AutoSize = true;
@@ -223,14 +234,6 @@
             this.lbSenha.Size = new System.Drawing.Size(44, 16);
             this.lbSenha.TabIndex = 69;
             this.lbSenha.Text = "Senha";
-            // 
-            // tbSenha
-            // 
-            this.tbSenha.Location = new System.Drawing.Point(31, 443);
-            this.tbSenha.Name = "tbSenha";
-            this.tbSenha.PasswordChar = '*';
-            this.tbSenha.Size = new System.Drawing.Size(236, 20);
-            this.tbSenha.TabIndex = 70;
             // 
             // GestorLivro
             // 

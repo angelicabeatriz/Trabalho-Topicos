@@ -16,5 +16,21 @@ namespace Trabalho.Apresentacao
         {
             InitializeComponent();
         }
+
+        private void btAnterior_Click(object sender, EventArgs e)
+        {
+            BemVindo bemVindo = new BemVindo();
+            bemVindo.Show();
+        }
+
+        private void tbSalvar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
