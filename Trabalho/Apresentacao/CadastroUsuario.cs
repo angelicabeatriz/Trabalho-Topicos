@@ -36,52 +36,29 @@ namespace Trabalho.Apresentacao
         private void btCad_Click(object sender, EventArgs e)
         {
             
-                SqlConnection sql = new SqlConnection("Data Source=LAPTOP-R7T019C0\\MSQLBEATRIZ;Initial Catalog=Gestao Livros;Integrated Security=True");
-                SqlCommand command = new SqlCommand("insert into CadastroUsuario(IDUsuario, Login, Senha, ConfirmarSenha) " +
-                    "values(@IDUsuario, @Login, @Senha, @ConfirmarSenha)", sql);
-                command.Parameters.Add("@IDUsuario", SqlDbType.Int).Value = 0;
-                command.Parameters.Add("@Login", SqlDbType.VarChar).Value = tbLogin.Text;
-                command.Parameters.Add("@Senha", SqlDbType.VarChar).Value = tbSenha.Text;
-                command.Parameters.Add("@ConfirmarSenha", SqlDbType.VarChar).Value = tbConfirmarSenha.Text;
-
-                try
-                {
-                    sql.Open();
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Endereço Cadastrado com Sucesso!");
-                    tbLogin.Clear();
-                    tbSenha.Clear();
-                    tbConfirmarSenha.Clear();
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show("Olha o erro: " + ex);
-                }
-                finally
-                {
-                    sql.Close();
-                }
-            Controle controle = new Controle();
-            controle.cadastrar(tbLogin.Text, tbSenha.Text, tbConfirmarSenha.Text);
-            if (controle.mensagem.Equals(" "))
+                SqlConnection sql = new SqlConnection("Data Source=LAPTOP-R7T019C0\\MSQLBEATRIZ;Initial Catalog=GestaoLivros;Integrated Security=True");
+                SqlCommand command = new SqlCommand("insert into cadUsuario(email, senha, confirmarSenha) " +
+                    "values(@email, @senha, @confirmarSenha)", sql);
+            command.Parameters.Add("@email", SqlDbType.VarChar).Value = tbEmail.Text;
+            command.Parameters.Add("@senha", SqlDbType.VarChar).Value = tbSenha.Text;
+            command.Parameters.Add("@confirmarSenha", SqlDbType.VarChar).Value = tbConfirmarSenha.Text;
+       
+            try
             {
-
-                if (controle.encontrado)
-                {
-                    MessageBox.Show("Cadastrado com Sucesso", "Cadastrando",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    BemVindo bem = new BemVindo();
-                    bem.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Verifique login e senha", "Erro",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                sql.Open();
+                command.ExecuteNonQuery();
+                MessageBox.Show("Endereço Cadastrado com Sucesso!");
+                tbEmail.Clear();
+                tbSenha.Clear();
+                tbConfirmarSenha.Clear();
             }
-            else
+            catch (SqlException ex)
             {
-                MessageBox.Show(controle.mensagem);
+                MessageBox.Show("Olha o erro: " + ex);
+            }
+            finally
+            {
+                sql.Close();
             }
 
         }

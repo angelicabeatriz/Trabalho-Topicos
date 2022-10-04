@@ -40,23 +40,23 @@
             this.lbCadLiv = new System.Windows.Forms.Label();
             this.btAnterior = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btBuscarLiv = new System.Windows.Forms.Button();
-            this.btDevLiv = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tbAnoPlub = new System.Windows.Forms.TextBox();
-            this.lbAnoPlub = new System.Windows.Forms.Label();
-            this.tbMatLiv = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbAutores = new System.Windows.Forms.TextBox();
-            this.lbAutores = new System.Windows.Forms.Label();
-            this.tbEditora = new System.Windows.Forms.TextBox();
-            this.lbEditora = new System.Windows.Forms.Label();
-            this.tbTitLiv = new System.Windows.Forms.TextBox();
-            this.lbTitLiv = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbAnoPlub = new System.Windows.Forms.TextBox();
+            this.tbMatLiv = new System.Windows.Forms.TextBox();
+            this.lbAnoPlub = new System.Windows.Forms.Label();
+            this.lbTitLiv = new System.Windows.Forms.Label();
+            this.tbTitLiv = new System.Windows.Forms.TextBox();
+            this.lbEditora = new System.Windows.Forms.Label();
+            this.tbAutores = new System.Windows.Forms.TextBox();
+            this.tbEditora = new System.Windows.Forms.TextBox();
+            this.lbAutores = new System.Windows.Forms.Label();
+            this.btDevLiv = new System.Windows.Forms.Button();
+            this.btBuscarLiv = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btSair
@@ -177,118 +177,6 @@
             this.panel1.Size = new System.Drawing.Size(920, 513);
             this.panel1.TabIndex = 0;
             // 
-            // btBuscarLiv
-            // 
-            this.btBuscarLiv.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btBuscarLiv.Location = new System.Drawing.Point(184, 98);
-            this.btBuscarLiv.Name = "btBuscarLiv";
-            this.btBuscarLiv.Size = new System.Drawing.Size(75, 23);
-            this.btBuscarLiv.TabIndex = 69;
-            this.btBuscarLiv.Text = "Buscar Livro";
-            this.btBuscarLiv.UseVisualStyleBackColor = true;
-            // 
-            // btDevLiv
-            // 
-            this.btDevLiv.Location = new System.Drawing.Point(23, 331);
-            this.btDevLiv.Name = "btDevLiv";
-            this.btDevLiv.Size = new System.Drawing.Size(106, 23);
-            this.btDevLiv.TabIndex = 70;
-            this.btDevLiv.Text = "Devolver Livro";
-            this.btDevLiv.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(307, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 154);
-            this.pictureBox1.TabIndex = 87;
-            this.pictureBox1.TabStop = false;
-            // 
-            // tbAnoPlub
-            // 
-            this.tbAnoPlub.Location = new System.Drawing.Point(22, 298);
-            this.tbAnoPlub.Name = "tbAnoPlub";
-            this.tbAnoPlub.Size = new System.Drawing.Size(236, 20);
-            this.tbAnoPlub.TabIndex = 83;
-            // 
-            // lbAnoPlub
-            // 
-            this.lbAnoPlub.AutoSize = true;
-            this.lbAnoPlub.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAnoPlub.Location = new System.Drawing.Point(19, 279);
-            this.lbAnoPlub.Name = "lbAnoPlub";
-            this.lbAnoPlub.Size = new System.Drawing.Size(116, 16);
-            this.lbAnoPlub.TabIndex = 82;
-            this.lbAnoPlub.Text = "Ano de Publicação";
-            // 
-            // tbMatLiv
-            // 
-            this.tbMatLiv.Location = new System.Drawing.Point(22, 49);
-            this.tbMatLiv.Name = "tbMatLiv";
-            this.tbMatLiv.Size = new System.Drawing.Size(236, 20);
-            this.tbMatLiv.TabIndex = 81;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 16);
-            this.label3.TabIndex = 80;
-            this.label3.Text = "Matricula Livro";
-            // 
-            // tbAutores
-            // 
-            this.tbAutores.Location = new System.Drawing.Point(22, 232);
-            this.tbAutores.Name = "tbAutores";
-            this.tbAutores.Size = new System.Drawing.Size(236, 20);
-            this.tbAutores.TabIndex = 77;
-            // 
-            // lbAutores
-            // 
-            this.lbAutores.AutoSize = true;
-            this.lbAutores.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAutores.Location = new System.Drawing.Point(19, 213);
-            this.lbAutores.Name = "lbAutores";
-            this.lbAutores.Size = new System.Drawing.Size(52, 16);
-            this.lbAutores.TabIndex = 76;
-            this.lbAutores.Text = "Autores";
-            // 
-            // tbEditora
-            // 
-            this.tbEditora.Location = new System.Drawing.Point(22, 168);
-            this.tbEditora.Name = "tbEditora";
-            this.tbEditora.Size = new System.Drawing.Size(236, 20);
-            this.tbEditora.TabIndex = 75;
-            // 
-            // lbEditora
-            // 
-            this.lbEditora.AutoSize = true;
-            this.lbEditora.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEditora.Location = new System.Drawing.Point(19, 149);
-            this.lbEditora.Name = "lbEditora";
-            this.lbEditora.Size = new System.Drawing.Size(48, 16);
-            this.lbEditora.TabIndex = 74;
-            this.lbEditora.Text = "Editora";
-            // 
-            // tbTitLiv
-            // 
-            this.tbTitLiv.Location = new System.Drawing.Point(22, 107);
-            this.tbTitLiv.Name = "tbTitLiv";
-            this.tbTitLiv.Size = new System.Drawing.Size(236, 20);
-            this.tbTitLiv.TabIndex = 72;
-            // 
-            // lbTitLiv
-            // 
-            this.lbTitLiv.AutoSize = true;
-            this.lbTitLiv.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitLiv.Location = new System.Drawing.Point(19, 88);
-            this.lbTitLiv.Name = "lbTitLiv";
-            this.lbTitLiv.Size = new System.Drawing.Size(86, 16);
-            this.lbTitLiv.TabIndex = 71;
-            this.lbTitLiv.Text = "Titulo do Livro";
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox1);
@@ -308,6 +196,119 @@
             this.panel2.Size = new System.Drawing.Size(506, 391);
             this.panel2.TabIndex = 89;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(307, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 154);
+            this.pictureBox1.TabIndex = 87;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(19, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 16);
+            this.label3.TabIndex = 80;
+            this.label3.Text = "Matricula Livro";
+            // 
+            // tbAnoPlub
+            // 
+            this.tbAnoPlub.Location = new System.Drawing.Point(22, 298);
+            this.tbAnoPlub.Name = "tbAnoPlub";
+            this.tbAnoPlub.Size = new System.Drawing.Size(236, 20);
+            this.tbAnoPlub.TabIndex = 83;
+            // 
+            // tbMatLiv
+            // 
+            this.tbMatLiv.Location = new System.Drawing.Point(22, 49);
+            this.tbMatLiv.Name = "tbMatLiv";
+            this.tbMatLiv.Size = new System.Drawing.Size(236, 20);
+            this.tbMatLiv.TabIndex = 81;
+            // 
+            // lbAnoPlub
+            // 
+            this.lbAnoPlub.AutoSize = true;
+            this.lbAnoPlub.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAnoPlub.Location = new System.Drawing.Point(19, 279);
+            this.lbAnoPlub.Name = "lbAnoPlub";
+            this.lbAnoPlub.Size = new System.Drawing.Size(116, 16);
+            this.lbAnoPlub.TabIndex = 82;
+            this.lbAnoPlub.Text = "Ano de Publicação";
+            // 
+            // lbTitLiv
+            // 
+            this.lbTitLiv.AutoSize = true;
+            this.lbTitLiv.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitLiv.Location = new System.Drawing.Point(19, 88);
+            this.lbTitLiv.Name = "lbTitLiv";
+            this.lbTitLiv.Size = new System.Drawing.Size(86, 16);
+            this.lbTitLiv.TabIndex = 71;
+            this.lbTitLiv.Text = "Titulo do Livro";
+            // 
+            // tbTitLiv
+            // 
+            this.tbTitLiv.Location = new System.Drawing.Point(22, 107);
+            this.tbTitLiv.Name = "tbTitLiv";
+            this.tbTitLiv.Size = new System.Drawing.Size(236, 20);
+            this.tbTitLiv.TabIndex = 72;
+            // 
+            // lbEditora
+            // 
+            this.lbEditora.AutoSize = true;
+            this.lbEditora.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEditora.Location = new System.Drawing.Point(19, 149);
+            this.lbEditora.Name = "lbEditora";
+            this.lbEditora.Size = new System.Drawing.Size(48, 16);
+            this.lbEditora.TabIndex = 74;
+            this.lbEditora.Text = "Editora";
+            // 
+            // tbAutores
+            // 
+            this.tbAutores.Location = new System.Drawing.Point(22, 232);
+            this.tbAutores.Name = "tbAutores";
+            this.tbAutores.Size = new System.Drawing.Size(236, 20);
+            this.tbAutores.TabIndex = 77;
+            // 
+            // tbEditora
+            // 
+            this.tbEditora.Location = new System.Drawing.Point(22, 168);
+            this.tbEditora.Name = "tbEditora";
+            this.tbEditora.Size = new System.Drawing.Size(236, 20);
+            this.tbEditora.TabIndex = 75;
+            // 
+            // lbAutores
+            // 
+            this.lbAutores.AutoSize = true;
+            this.lbAutores.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAutores.Location = new System.Drawing.Point(19, 213);
+            this.lbAutores.Name = "lbAutores";
+            this.lbAutores.Size = new System.Drawing.Size(52, 16);
+            this.lbAutores.TabIndex = 76;
+            this.lbAutores.Text = "Autores";
+            // 
+            // btDevLiv
+            // 
+            this.btDevLiv.Location = new System.Drawing.Point(23, 331);
+            this.btDevLiv.Name = "btDevLiv";
+            this.btDevLiv.Size = new System.Drawing.Size(106, 23);
+            this.btDevLiv.TabIndex = 70;
+            this.btDevLiv.Text = "Devolver Livro";
+            this.btDevLiv.UseVisualStyleBackColor = true;
+            // 
+            // btBuscarLiv
+            // 
+            this.btBuscarLiv.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBuscarLiv.Location = new System.Drawing.Point(184, 98);
+            this.btBuscarLiv.Name = "btBuscarLiv";
+            this.btBuscarLiv.Size = new System.Drawing.Size(75, 23);
+            this.btBuscarLiv.TabIndex = 69;
+            this.btBuscarLiv.Text = "Buscar Livro";
+            this.btBuscarLiv.UseVisualStyleBackColor = true;
+            this.btBuscarLiv.Click += new System.EventHandler(this.btBuscarLiv_Click);
+            // 
             // Emprestimo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,9 +319,9 @@
             this.Text = "Emprestimo";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

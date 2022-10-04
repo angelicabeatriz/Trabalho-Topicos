@@ -38,11 +38,11 @@
             this.btSair = new System.Windows.Forms.Button();
             this.btEntrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btSobre = new System.Windows.Forms.Button();
             this.btAjuda = new System.Windows.Forms.Button();
             this.lbCPFCNPJ = new System.Windows.Forms.Label();
             this.lbGestaoLivros = new System.Windows.Forms.Label();
             this.lbFacaLogin = new System.Windows.Forms.Label();
-            this.btSobre = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -151,6 +151,16 @@
             this.panel1.Size = new System.Drawing.Size(494, 315);
             this.panel1.TabIndex = 8;
             // 
+            // btSobre
+            // 
+            this.btSobre.Location = new System.Drawing.Point(380, 289);
+            this.btSobre.Name = "btSobre";
+            this.btSobre.Size = new System.Drawing.Size(53, 23);
+            this.btSobre.TabIndex = 11;
+            this.btSobre.Text = "Sobre ";
+            this.btSobre.UseVisualStyleBackColor = true;
+            this.btSobre.Click += new System.EventHandler(this.btSobre_Click);
+            // 
             // btAjuda
             // 
             this.btAjuda.BackColor = System.Drawing.Color.Transparent;
@@ -195,16 +205,6 @@
             this.lbFacaLogin.TabIndex = 1;
             this.lbFacaLogin.Text = "Faça seu Login";
             this.lbFacaLogin.Click += new System.EventHandler(this.lbFacaLogin_Click);
-            // 
-            // btSobre
-            // 
-            this.btSobre.Location = new System.Drawing.Point(380, 289);
-            this.btSobre.Name = "btSobre";
-            this.btSobre.Size = new System.Drawing.Size(53, 23);
-            this.btSobre.TabIndex = 11;
-            this.btSobre.Text = "Sobre ";
-            this.btSobre.UseVisualStyleBackColor = true;
-            this.btSobre.Click += new System.EventHandler(this.btSobre_Click);
             // 
             // Login
             // 

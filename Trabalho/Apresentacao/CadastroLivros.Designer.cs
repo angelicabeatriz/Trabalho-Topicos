@@ -38,7 +38,7 @@
             this.lbAnoPlub = new System.Windows.Forms.Label();
             this.tbMatLiv = new System.Windows.Forms.TextBox();
             this.lbMatLiv = new System.Windows.Forms.Label();
-            this.tbCidade = new System.Windows.Forms.TextBox();
+            this.tbQuantLiv = new System.Windows.Forms.TextBox();
             this.lbQuantEx = new System.Windows.Forms.Label();
             this.tbAutores = new System.Windows.Forms.TextBox();
             this.lbAutores = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.panel1.Controls.Add(this.lbAnoPlub);
             this.panel1.Controls.Add(this.tbMatLiv);
             this.panel1.Controls.Add(this.lbMatLiv);
-            this.panel1.Controls.Add(this.tbCidade);
+            this.panel1.Controls.Add(this.tbQuantLiv);
             this.panel1.Controls.Add(this.lbQuantEx);
             this.panel1.Controls.Add(this.tbAutores);
             this.panel1.Controls.Add(this.lbAutores);
@@ -122,6 +122,7 @@
             this.tbSalvar.TabIndex = 48;
             this.tbSalvar.Text = "Cadastrar";
             this.tbSalvar.UseVisualStyleBackColor = true;
+            this.tbSalvar.Click += new System.EventHandler(this.tbSalvar_Click);
             // 
             // tbAnoPlub
             // 
@@ -157,12 +158,12 @@
             this.lbMatLiv.TabIndex = 44;
             this.lbMatLiv.Text = "Matricula Livro";
             // 
-            // tbCidade
+            // tbQuantLiv
             // 
-            this.tbCidade.Location = new System.Drawing.Point(21, 379);
-            this.tbCidade.Name = "tbCidade";
-            this.tbCidade.Size = new System.Drawing.Size(236, 20);
-            this.tbCidade.TabIndex = 43;
+            this.tbQuantLiv.Location = new System.Drawing.Point(21, 379);
+            this.tbQuantLiv.Name = "tbQuantLiv";
+            this.tbQuantLiv.Size = new System.Drawing.Size(236, 20);
+            this.tbQuantLiv.TabIndex = 43;
             // 
             // lbQuantEx
             // 
@@ -260,7 +261,7 @@
         private System.Windows.Forms.Label lbAnoPlub;
         private System.Windows.Forms.TextBox tbMatLiv;
         private System.Windows.Forms.Label lbMatLiv;
-        private System.Windows.Forms.TextBox tbCidade;
+        private System.Windows.Forms.TextBox tbQuantLiv;
         private System.Windows.Forms.Label lbQuantEx;
         private System.Windows.Forms.TextBox tbAutores;
         private System.Windows.Forms.Label lbAutores;

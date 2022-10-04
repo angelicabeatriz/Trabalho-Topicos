@@ -19,7 +19,7 @@ namespace Trabalho.DAO
         public bool verificar(String login, String senha)
         {
             //comando sql para verificar
-            cmd.CommandText = "select * from nomeTabela where email = @login and senha = @senha";
+            cmd.CommandText = "select * from login where email = @login and senha = @senha";
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
 
@@ -42,7 +42,7 @@ namespace Trabalho.DAO
             return tem;
         }
 
-        public String inserir(String email, String senha, String ConfirmarSenha)
+        public String inserir(String email, String senha, String confirmarSenha)
         {
             //comando sql para inserir
             return mensagem;

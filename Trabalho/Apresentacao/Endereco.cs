@@ -49,9 +49,8 @@ namespace Trabalho.Apresentacao
         private void tbSalvar_Click(object sender, EventArgs e)
         {
             SqlConnection sql = new SqlConnection("Data Source=LAPTOP-R7T019C0\\MSQLBEATRIZ;Initial Catalog=Gestao Livros;Integrated Security=True");
-            SqlCommand command = new SqlCommand("insert into Endereco(id, cep, quadra, numero, complemento, cidade, estado) " +
-                "values(@id, @cep, @quadra, @numero, @complemento, @cidade, @estado)", sql);
-            command.Parameters.Add("@id", SqlDbType.Int).Value = 0;
+            SqlCommand command = new SqlCommand("insert into Endereco(cep, quadra, numero, complemento, cidade, estado) " +
+                "values(@cep, @quadra, @numero, @complemento, @cidade, @estado)", sql);
             command.Parameters.Add("@cep", SqlDbType.VarChar).Value = tbCep.Text;
             command.Parameters.Add("@quadra", SqlDbType.VarChar).Value = tbQuadra.Text;
             command.Parameters.Add("@numero", SqlDbType.VarChar).Value = tbNumero.Text;

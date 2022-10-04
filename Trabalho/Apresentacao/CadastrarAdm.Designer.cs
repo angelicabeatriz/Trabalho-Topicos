@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.btAnterior = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btCadastrar = new System.Windows.Forms.Button();
             this.tbNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tbSenha = new System.Windows.Forms.TextBox();
-            this.tbLogin = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btSair = new System.Windows.Forms.Button();
@@ -53,16 +53,17 @@
             this.btAnterior.UseVisualStyleBackColor = false;
             this.btAnterior.Click += new System.EventHandler(this.btAnterior_Click);
             // 
-            // button1
+            // btCadastrar
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(180, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btCadastrar.BackColor = System.Drawing.Color.White;
+            this.btCadastrar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCadastrar.Location = new System.Drawing.Point(180, 237);
+            this.btCadastrar.Name = "btCadastrar";
+            this.btCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.btCadastrar.TabIndex = 11;
+            this.btCadastrar.Text = "Cadastrar";
+            this.btCadastrar.UseVisualStyleBackColor = false;
+            this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
             // tbNome
             // 
@@ -88,9 +89,9 @@
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(26, 137);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 16);
+            this.label1.Size = new System.Drawing.Size(40, 16);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Login";
+            this.label1.Text = "Email";
             // 
             // tbSenha
             // 
@@ -100,12 +101,12 @@
             this.tbSenha.Size = new System.Drawing.Size(226, 20);
             this.tbSenha.TabIndex = 13;
             // 
-            // tbLogin
+            // tbEmail
             // 
-            this.tbLogin.Location = new System.Drawing.Point(29, 156);
-            this.tbLogin.Name = "tbLogin";
-            this.tbLogin.Size = new System.Drawing.Size(226, 20);
-            this.tbLogin.TabIndex = 12;
+            this.tbEmail.Location = new System.Drawing.Point(29, 156);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(226, 20);
+            this.tbEmail.TabIndex = 12;
             // 
             // label2
             // 
@@ -122,12 +123,12 @@
             this.panel1.Controls.Add(this.btSair);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btAnterior);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btCadastrar);
             this.panel1.Controls.Add(this.tbNome);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.tbSenha);
-            this.panel1.Controls.Add(this.tbLogin);
+            this.panel1.Controls.Add(this.tbEmail);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
@@ -173,12 +174,12 @@
         #endregion
 
         private System.Windows.Forms.Button btAnterior;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.TextBox tbNome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbSenha;
-        private System.Windows.Forms.TextBox tbLogin;
+        private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;

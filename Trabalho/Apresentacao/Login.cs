@@ -41,8 +41,8 @@ namespace Trabalho
                 {
                     MessageBox.Show("Logado com Sucesso", "Logando",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    BemVindo bem = new BemVindo();
-                    bem.Show();
+                    Emprestimo emp = new Emprestimo();
+                    emp.Show();
                 }
                 else
                 {

@@ -16,5 +16,11 @@ namespace Trabalho.Apresentacao
         {
             InitializeComponent();
         }
+
+        private void btBuscarLiv_Click(object sender, EventArgs e)
+        {
+          
+            
+        }
     }
 }

@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btCad = new System.Windows.Forms.Button();
-            this.tbLogin = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbSenha = new System.Windows.Forms.TextBox();
             this.tbConfirmarSenha = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -50,9 +50,9 @@
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(29, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 16);
+            this.label1.Size = new System.Drawing.Size(40, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Login";
+            this.label1.Text = "Email";
             // 
             // label2
             // 
@@ -86,12 +86,12 @@
             this.btCad.UseVisualStyleBackColor = false;
             this.btCad.Click += new System.EventHandler(this.btCad_Click);
             // 
-            // tbLogin
+            // tbEmail
             // 
-            this.tbLogin.Location = new System.Drawing.Point(32, 97);
-            this.tbLogin.Name = "tbLogin";
-            this.tbLogin.Size = new System.Drawing.Size(226, 20);
-            this.tbLogin.TabIndex = 4;
+            this.tbEmail.Location = new System.Drawing.Point(32, 97);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(226, 20);
+            this.tbEmail.TabIndex = 4;
             // 
             // tbSenha
             // 
@@ -121,7 +121,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.tbSenha);
-            this.panel1.Controls.Add(this.tbLogin);
+            this.panel1.Controls.Add(this.tbEmail);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
@@ -183,14 +183,14 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Cadastrar Usuario";
             // 
-            // Cadastro
+            // CadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(395, 397);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Cadastro";
+            this.Name = "CadastroUsuario";
             this.Text = "Cadastro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -204,7 +204,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btCad;
-        private System.Windows.Forms.TextBox tbLogin;
+        private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.TextBox tbSenha;
         private System.Windows.Forms.TextBox tbConfirmarSenha;
         private System.Windows.Forms.Panel panel1;
