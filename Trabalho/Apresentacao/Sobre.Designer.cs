@@ -33,6 +33,7 @@
             this.btAnterior = new System.Windows.Forms.Button();
             this.btSair = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btAreaAdmim = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,13 +49,14 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btAreaAdmim);
             this.panel1.Controls.Add(this.btAnterior);
             this.panel1.Controls.Add(this.btSair);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(46, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(441, 173);
+            this.panel1.Size = new System.Drawing.Size(456, 171);
             this.panel1.TabIndex = 1;
             // 
             // btAnterior
@@ -90,11 +92,21 @@
             this.label2.Text = "Sistema de Gestão de Livros, onde você poderá pegar livros \r\nemprestados e fazer " +
     "a devolução dos mesmo.\r\n\r\n";
             // 
+            // btAreaAdmim
+            // 
+            this.btAreaAdmim.Location = new System.Drawing.Point(266, 135);
+            this.btAreaAdmim.Name = "btAreaAdmim";
+            this.btAreaAdmim.Size = new System.Drawing.Size(152, 23);
+            this.btAreaAdmim.TabIndex = 36;
+            this.btAreaAdmim.Text = "Area do Administrador\r\n";
+            this.btAreaAdmim.UseVisualStyleBackColor = true;
+            this.btAreaAdmim.Click += new System.EventHandler(this.btAreaAdmim_Click);
+            // 
             // Sobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 203);
+            this.ClientSize = new System.Drawing.Size(541, 216);
             this.Controls.Add(this.panel1);
             this.Name = "Sobre";
             this.Text = "Sobre";
@@ -111,5 +123,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btSair;
         private System.Windows.Forms.Button btAnterior;
+        private System.Windows.Forms.Button btAreaAdmim;
     }
 }

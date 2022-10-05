@@ -27,6 +27,11 @@ namespace Trabalho.Apresentacao
             Login log = new Login();
             log.Show();
         }
-    
+
+        private void btAreaAdmim_Click(object sender, EventArgs e)
+        {
+            BemVindo bemVindo = new BemVindo();
+            bemVindo.Show();
+        }
     }
 }

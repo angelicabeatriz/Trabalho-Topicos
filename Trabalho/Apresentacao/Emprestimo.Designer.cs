@@ -131,7 +131,7 @@
             // 
             // tbPgEmp
             // 
-            this.tbPgEmp.Location = new System.Drawing.Point(78, 330);
+            this.tbPgEmp.Location = new System.Drawing.Point(22, 324);
             this.tbPgEmp.Name = "tbPgEmp";
             this.tbPgEmp.Size = new System.Drawing.Size(106, 23);
             this.tbPgEmp.TabIndex = 66;
@@ -150,7 +150,7 @@
             // 
             // btAnterior
             // 
-            this.btAnterior.Location = new System.Drawing.Point(3, 373);
+            this.btAnterior.Location = new System.Drawing.Point(3, 487);
             this.btAnterior.Name = "btAnterior";
             this.btAnterior.Size = new System.Drawing.Size(53, 23);
             this.btAnterior.TabIndex = 68;
@@ -291,7 +291,7 @@
             // 
             // btDevLiv
             // 
-            this.btDevLiv.Location = new System.Drawing.Point(23, 331);
+            this.btDevLiv.Location = new System.Drawing.Point(23, 314);
             this.btDevLiv.Name = "btDevLiv";
             this.btDevLiv.Size = new System.Drawing.Size(106, 23);
             this.btDevLiv.TabIndex = 70;
